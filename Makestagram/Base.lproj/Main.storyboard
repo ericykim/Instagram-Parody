@@ -87,7 +87,7 @@
                                                     <state key="normal" image="heart"/>
                                                     <state key="selected" image="heart_selected"/>
                                                     <connections>
-                                                        <action selector="likeButtonTapped:" destination="1e9-6w-b4s" eventType="touchUpInside" id="Bq5-dI-NJz"/>
+                                                        <action selector="likeButtonTapped:" destination="1e9-6w-b4s" eventType="touchUpInside" id="gXA-TN-QdP"/>
                                                     </connections>
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XoF-ZA-95v">
@@ -98,7 +98,7 @@
                                                     </constraints>
                                                     <state key="normal" image="more"/>
                                                     <connections>
-                                                        <action selector="moreButtonTapped:" destination="1e9-6w-b4s" eventType="touchUpInside" id="GD0-Ge-ZmZ"/>
+                                                        <action selector="moreButtonTapped:" destination="1e9-6w-b4s" eventType="touchUpInside" id="bYD-Hj-8bO"/>
                                                     </connections>
                                                 </button>
                                                 <imageView userInteractionEnabled="NO" alpha="0.5" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="heart" translatesAutoresizingMaskIntoConstraints="NO" id="qTz-2P-u59">
@@ -140,11 +140,11 @@
                                             </variation>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="likeButton" destination="Yyg-Lu-7aN" id="zEi-tJ-WDh"/>
-                                            <outlet property="likesIconImageView" destination="qTz-2P-u59" id="Wp8-4Z-LhU"/>
-                                            <outlet property="likesLabel" destination="Prm-So-LEb" id="Z3z-nU-3Bq"/>
-                                            <outlet property="moreButton" destination="XoF-ZA-95v" id="oXr-C5-f5b"/>
-                                            <outlet property="postImageView" destination="GUq-Kk-Lrb" id="0cp-zr-j3u"/>
+                                            <outlet property="likeButton" destination="Yyg-Lu-7aN" id="Mdt-Dl-PR6"/>
+                                            <outlet property="likesIconImageView" destination="qTz-2P-u59" id="pGQ-by-8Eb"/>
+                                            <outlet property="likesLabel" destination="Prm-So-LEb" id="SxN-cK-6B6"/>
+                                            <outlet property="moreButton" destination="XoF-ZA-95v" id="sLh-Z1-0R8"/>
+                                            <outlet property="postImageView" destination="GUq-Kk-Lrb" id="Xoo-Rl-bK0"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
