@@ -23,6 +23,7 @@
                     <tabBarItem key="tabBarItem" title="" image="camera" id="rbA-Sw-zSK">
                         <inset key="imageInsets" minX="0.0" minY="5" maxX="0.0" maxY="-5"/>
                     </tabBarItem>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IEJ-Hy-q4S" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -40,6 +41,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OSh-Se-uB0">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
+                                <color key="backgroundColor" red="0.25490196079999999" green="0.2666666667" blue="0.28235294119999998" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
                             <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="d4w-mT-LRi">
                                 <rect key="frame" x="0.0" y="20" width="600" height="44"/>
                                 <constraints>
@@ -70,11 +75,11 @@
                                                         <constraint firstAttribute="height" constant="21" id="nbG-KS-zKu"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sxD-di-N4V">
-                                                    <rect key="frame" x="540" y="-0.5" width="44" height="44"/>
+                                                    <rect key="frame" x="540" y="-1" width="44" height="44"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="44" id="9no-rO-MD1"/>
                                                         <constraint firstAttribute="width" constant="44" id="kmV-rL-SaM"/>
@@ -124,13 +129,17 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="d4w-mT-LRi" firstAttribute="top" secondItem="XMZ-Yu-Nbz" secondAttribute="bottom" id="84R-5O-SAg"/>
+                            <constraint firstItem="OSh-Se-uB0" firstAttribute="top" secondItem="fLS-xx-Aa0" secondAttribute="top" id="HkV-y9-jC2"/>
                             <constraint firstAttribute="trailing" secondItem="d4w-mT-LRi" secondAttribute="trailing" id="Hmb-cC-VTR"/>
                             <constraint firstItem="szC-ZA-zxT" firstAttribute="bottom" secondItem="NBY-P4-Y2J" secondAttribute="top" id="UA0-Yj-7LJ"/>
                             <constraint firstItem="d4w-mT-LRi" firstAttribute="leading" secondItem="fLS-xx-Aa0" secondAttribute="leading" id="aGt-1D-iaB"/>
                             <constraint firstItem="szC-ZA-zxT" firstAttribute="trailing" secondItem="d4w-mT-LRi" secondAttribute="trailing" id="e3Z-bn-Wd2"/>
+                            <constraint firstItem="OSh-Se-uB0" firstAttribute="leading" secondItem="fLS-xx-Aa0" secondAttribute="leading" id="f7m-nQ-udc"/>
+                            <constraint firstAttribute="trailing" secondItem="OSh-Se-uB0" secondAttribute="trailing" id="iQB-I9-5di"/>
                             <constraint firstItem="szC-ZA-zxT" firstAttribute="top" secondItem="d4w-mT-LRi" secondAttribute="bottom" id="jCg-zY-s7G"/>
                             <constraint firstItem="szC-ZA-zxT" firstAttribute="centerY" secondItem="fLS-xx-Aa0" secondAttribute="centerY" id="mkQ-Lk-Tof"/>
                             <constraint firstItem="szC-ZA-zxT" firstAttribute="centerX" secondItem="fLS-xx-Aa0" secondAttribute="centerX" id="nni-Lv-Q3A"/>
+                            <constraint firstItem="NBY-P4-Y2J" firstAttribute="top" secondItem="OSh-Se-uB0" secondAttribute="bottom" id="oXK-vb-vb6"/>
                             <constraint firstItem="szC-ZA-zxT" firstAttribute="leading" secondItem="d4w-mT-LRi" secondAttribute="leading" id="rE4-2A-qWe"/>
                         </constraints>
                         <variation key="default">
@@ -143,6 +152,7 @@
                     <tabBarItem key="tabBarItem" title="" image="people" id="gEu-VB-oKq">
                         <inset key="imageInsets" minX="0.0" minY="5" maxX="0.0" maxY="-5"/>
                     </tabBarItem>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
                     <connections>
                         <outlet property="searchBar" destination="d4w-mT-LRi" id="Woo-j2-LQJ"/>
                         <outlet property="tableView" destination="szC-ZA-zxT" id="eNY-yQ-09M"/>
@@ -164,6 +174,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c5P-eH-zMU">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
+                                <color key="backgroundColor" red="0.25490196078431371" green="0.26666666666666666" blue="0.28235294117647058" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="470" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="NMB-5Q-QqM">
                                 <rect key="frame" x="0.0" y="20" width="600" height="531"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -261,7 +275,7 @@
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ILD-cT-RtH">
                                                     <rect key="frame" x="8" y="11" width="37.5" height="17"/>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="clock" translatesAutoresizingMaskIntoConstraints="NO" id="pZc-t3-odC">
@@ -272,7 +286,7 @@
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gtk-s8-iMZ">
-                                                    <rect key="frame" x="526.5" y="11" width="37.5" height="17"/>
+                                                    <rect key="frame" x="526" y="11" width="37.5" height="17"/>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
                                                     <color key="textColor" red="0.53725490196078429" green="0.53725490196078429" blue="0.53725490196078429" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -303,14 +317,19 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="1fs-DD-Rlp" firstAttribute="top" secondItem="NMB-5Q-QqM" secondAttribute="bottom" id="0yW-Hh-MMk"/>
+                            <constraint firstAttribute="trailing" secondItem="c5P-eH-zMU" secondAttribute="trailing" id="5Kv-nM-C0p"/>
                             <constraint firstItem="NMB-5Q-QqM" firstAttribute="leading" secondItem="fVY-up-Doh" secondAttribute="leading" id="9sp-Il-HS5"/>
+                            <constraint firstItem="c5P-eH-zMU" firstAttribute="top" secondItem="fVY-up-Doh" secondAttribute="top" id="CpP-iZ-z1I"/>
                             <constraint firstItem="NMB-5Q-QqM" firstAttribute="top" secondItem="2SR-ZC-IIl" secondAttribute="bottom" id="Ncu-Sy-Gmu"/>
                             <constraint firstAttribute="trailing" secondItem="NMB-5Q-QqM" secondAttribute="trailing" id="R1P-Vb-LMG"/>
+                            <constraint firstItem="c5P-eH-zMU" firstAttribute="leading" secondItem="fVY-up-Doh" secondAttribute="leading" id="SqJ-jL-E7I"/>
+                            <constraint firstItem="1fs-DD-Rlp" firstAttribute="top" secondItem="c5P-eH-zMU" secondAttribute="bottom" id="lzE-bu-qFV"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="" image="home" id="nB7-Iq-Xa3">
                         <inset key="imageInsets" minX="0.0" minY="5" maxX="0.0" maxY="-5"/>
                     </tabBarItem>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
                     <connections>
                         <outlet property="tableView" destination="NMB-5Q-QqM" id="W8v-Ie-pnc"/>
                     </connections>
@@ -323,7 +342,8 @@
         <scene sceneID="Dc1-xK-Xa9">
             <objects>
                 <tabBarController storyboardIdentifier="TabBarController" id="dJo-bh-Bn9" sceneMemberID="viewController">
-                    <tabBar key="tabBar" contentMode="scaleToFill" id="vcV-3M-6bA">
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="blackOpaque"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" backgroundImage="tabbar" id="vcV-3M-6bA">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -349,5 +369,6 @@
         <image name="home" width="38" height="36"/>
         <image name="more" width="26" height="17"/>
         <image name="people" width="42" height="42"/>
+        <image name="tabbar" width="321" height="49"/>
     </resources>
 </document>

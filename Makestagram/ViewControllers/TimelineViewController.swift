@@ -119,3 +119,8 @@ extension TimelineViewController: UITableViewDelegate {
     }
     
 }
+extension FriendSearchViewController {
+    override func preferredStatusBarStyle() -> UIStatusBarStyle {
+        return .LightContent
+    }
+}
