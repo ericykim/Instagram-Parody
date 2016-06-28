@@ -40,6 +40,8 @@
 		B4A34E111D1CA3610064A69D /* PhotoTakingHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A34E101D1CA3610064A69D /* PhotoTakingHelper.swift */; };
 		B4B73B661D1DF13700B20273 /* ParseHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4B73B651D1DF13700B20273 /* ParseHelper.swift */; };
 		B4B73B6E1D21D5FE00B20273 /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4B73B6D1D21D5FE00B20273 /* PostTableViewCell.swift */; };
+		B4DCA82B1D22DEDE003B7547 /* FriendSearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4DCA82A1D22DEDE003B7547 /* FriendSearchTableViewCell.swift */; };
+		B4DCA82D1D231CBF003B7547 /* PostSectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4DCA82C1D231CBF003B7547 /* PostSectionHeaderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -107,6 +109,8 @@
 		B4A34E101D1CA3610064A69D /* PhotoTakingHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoTakingHelper.swift; sourceTree = "<group>"; };
 		B4B73B651D1DF13700B20273 /* ParseHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParseHelper.swift; sourceTree = "<group>"; };
 		B4B73B6D1D21D5FE00B20273 /* PostTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PostTableViewCell.swift; path = Makestagram/Views/TImeline/PostTableViewCell.swift; sourceTree = SOURCE_ROOT; };
+		B4DCA82A1D22DEDE003B7547 /* FriendSearchTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendSearchTableViewCell.swift; sourceTree = "<group>"; };
+		B4DCA82C1D231CBF003B7547 /* PostSectionHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PostSectionHeaderView.swift; path = Makestagram/Views/FriendSearch/PostSectionHeaderView.swift; sourceTree = SOURCE_ROOT; };
 		E90EF6307DCCDD1C8928B547 /* Pods-Makestagram.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Makestagram.release.xcconfig"; path = "Pods/Target Support Files/Pods-Makestagram/Pods-Makestagram.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -275,6 +279,7 @@
 			isa = PBXGroup;
 			children = (
 				B4B73B6D1D21D5FE00B20273 /* PostTableViewCell.swift */,
+				B4DCA82C1D231CBF003B7547 /* PostSectionHeaderView.swift */,
 			);
 			name = TImeline;
 			path = Makestagram/TImeline;
@@ -291,9 +296,18 @@
 		B4B73B5E1D1DE74600B20273 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				B4DCA8291D22DEAA003B7547 /* FriendSearch */,
 				B43CD1BD1D1DE6390017E58B /* TImeline */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		B4DCA8291D22DEAA003B7547 /* FriendSearch */ = {
+			isa = PBXGroup;
+			children = (
+				B4DCA82A1D22DEDE003B7547 /* FriendSearchTableViewCell.swift */,
+			);
+			path = FriendSearch;
 			sourceTree = "<group>";
 		};
 		D5AC80CB111FD63A4816B224 /* Pods */ = {
@@ -524,7 +538,9 @@
 				6277189F1B0A58E800AF5C6E /* ErrorHandling.swift in Sources */,
 				B4A34E0A1D1C9B980064A69D /* TimelineViewController.swift in Sources */,
 				B4A34E111D1CA3610064A69D /* PhotoTakingHelper.swift in Sources */,
+				B4DCA82B1D22DEDE003B7547 /* FriendSearchTableViewCell.swift in Sources */,
 				B4A34E0C1D1C9BC00064A69D /* PhotoViewController.swift in Sources */,
+				B4DCA82D1D231CBF003B7547 /* PostSectionHeaderView.swift in Sources */,
 				62C8C1E61B06BD6500DC3EA7 /* AppDelegate.swift in Sources */,
 				627718971B0A581700AF5C6E /* FilterViewController.swift in Sources */,
 				B4B73B661D1DF13700B20273 /* ParseHelper.swift in Sources */,
@@ -668,7 +684,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = "Make-School.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.erickim.photoappparody;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Makestagram/Makestagram-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -690,7 +706,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = "Make-School.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.erickim.photoappparody;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Makestagram/Makestagram-Bridging-Header.h";
 			};

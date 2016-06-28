@@ -47,6 +47,7 @@ extension ParseLoginHelper : PFLogInViewControllerDelegate {
             // Facebook Error? -> hand error to callback
             self.callback(nil, error)
           }
+    
         
           if let fbUsername = result?["name"] as? String {
             // assign Facebook name to PFUser
@@ -71,7 +72,12 @@ extension ParseLoginHelper : PFLogInViewControllerDelegate {
 //            )
             self.callback(nil, error)
           }
-      }
+        
+        if let error = error {
+            ErrorHandling.defaultErrorHandler(error)
+        }
+        }
+        
     }
   }
   
